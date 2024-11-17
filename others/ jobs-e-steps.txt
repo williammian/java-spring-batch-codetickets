@@ -1,0 +1,32 @@
+ Jobs e Steps
+
+ No contexto do Spring Batch, e do processamento em lote como um todo, os termos "Job" e "Step" possuem
+ significados distintos e representam conceitos importantes para a execução de tarefas em lote.
+ Vamos entender a diferença entre eles.
+
+ Job
+
+ Um Job representa uma unidade básica de trabalho no Spring Batch. Ele encapsula todo o processo a ser executado,
+ definindo uma sequência de etapas (Steps) que devem ser realizadas em uma determinada ordem.
+ Pense em um Job como um processamento que descreve como um grande volume de dados deve ser processado.
+ Um Job pode ser simples, com apenas um único Step, ou complexo, com múltiplos Steps interdependentes.
+
+ Por exemplo, imagine um Job chamado ProcessarPedidosJob, responsável por processar pedidos de um e-commerce.
+ Este Job pode ser dividido em diversos Steps, como LerPedidosStep, ValidarPedidosStep,
+ AtualizarEstoqueStep e GerarNotaFiscalStep. Cada Step realiza uma parte específica do processamento total.
+
+ Step
+
+ Um Step representa uma etapa individual dentro de um Job. É a unidade de trabalho que de fato executa o
+ processamento dos dados, geralmente lendo, processando e gravando informações.
+ Cada Step opera sobre um conjunto de dados e possui um objetivo bem definido.
+
+ No exemplo anterior, o LerPedidosStep seria responsável por ler os dados de pedidos de um arquivo ou banco de dados.
+ Já o ValidarPedidosStep verificaria se os pedidos são válidos,
+ enquanto o AtualizarEstoqueStep se encarregaria de atualizar o estoque do sistema com base nos pedidos processados.
+
+ Fazendo uma analogia, imagine um Job como uma receita de bolo e cada Step como uma etapa da receita
+ (misturar ingredientes, assar, decorar, etc.). O Job define a ordem das etapas e o resultado final (o bolo),
+ enquanto cada Step realiza uma tarefa específica.
+
+ No Spring Batch, você define Jobs e Steps usando classes Java e anotações

@@ -1,0 +1,40 @@
+Processamento em lote
+
+Processamento em lote (em inglês, batch processing), é um modelo de processamento de dados que consiste na execução
+de uma sequência de tarefas (chamadas de jobs) sobre um grande volume de dados, de forma automatizada e sem a
+necessidade de interação de um usuário do sistema. Esse tipo de processamento é ideal para cenários onde
+grandes quantidades de dados precisam ser processadas de forma eficiente e confiável, geralmente em
+horários de menor movimento ou como parte de um processo maior.
+
+Imagine, por exemplo, um banco que precisa processar milhões de transações bancárias no final do dia para atualizar
+os saldos das contas. Fazer isso manualmente seria inviável, tanto em termos de tempo quanto de chances de erro.
+Com o processamento em lote, essa tarefa pode ser automatizada e executada de forma rápida e eficiente.
+
+Características
+
+Execução em background: os jobs em lote são executados em segundo plano, sem a necessidade de interação do usuário
+durante o processamento;
+
+Processamento de grandes volumes de dados: o processamento em lote é projetado para lidar com grandes volumes de
+dados de forma eficiente;
+
+Automação: as tarefas são automatizadas e executadas em uma sequência predefinida;
+
+Escalabilidade: o processamento em lote pode ser facilmente escalado para lidar com o crescimento do volume de dados.
+
+Casos de uso
+
+Processamento de transações financeiras: Como mencionado no exemplo do banco, o processamento em lote é amplamente
+utilizado para processar transações financeiras, como pagamentos, transferências e extratos;
+
+Geração de relatórios: Empresas podem usar o processamento em lote para gerar relatórios periódicos de vendas, estoque,
+desempenho, etc.;
+
+Integração de dados: O processamento em lote pode ser usado para integrar dados de diferentes fontes,
+como bancos de dados e arquivos;
+
+Migração de dados: Migrar grandes volumes de dados de um sistema para outro é uma tarefa ideal
+para o processamento em lote.
+
+O Spring Batch é um módulo do Spring que facilita a criação e gerenciamento de aplicações de processamento
+em lote em Java, oferecendo recursos para lidar com as complexidades desse tipo de processamento.
